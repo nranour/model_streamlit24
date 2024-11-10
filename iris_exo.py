@@ -30,7 +30,8 @@ if select == 'Imput parameters directly':
 st.table(data)
 
 
-model = pickle.load(open(r"C:\Users\nrano\Desktop\Projet_Big_Data\02_Labs\10_deploiement\Streamlit\modeliris6.pkl",'rb'))
+#model = pickle.load(open(r"C:\Users\nrano\Desktop\Projet_Big_Data\02_Labs\10_deploiement\Streamlit\modeliris6.pkl",'rb'))
+model = pickle.load(open(r"modeliris6.pkl",'rb'))
 type = model.predict(data)
 
 st.write(type)
